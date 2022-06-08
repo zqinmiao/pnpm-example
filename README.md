@@ -4,7 +4,7 @@
 
 [JavaScript 包管理器简史](https://github.com/zqinmiao/js-coding-rover/docs/yarn/javascript-package-manager-history/index.md)
 
-[幻影依赖（Phantom dependencies）](./docs/phantom-dependencies.md)
+[关于幻影依赖（Phantom dependencies）问题的探索](./docs/phantom-dependencies.md)
 
 ## 安装初尝试
 

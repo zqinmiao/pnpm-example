@@ -4,6 +4,8 @@
 
 ## 使用`lodash`和`eslint`的子包，未能解决幻影依赖的问题
 
+⚠️pnpm@7.1.6，可以解决 ✅
+
 ### 在`package-a`中安装了`lodash`和`eslint`
 
 ```json

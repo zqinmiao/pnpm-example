@@ -1,6 +1,6 @@
 # pnpm 使用探索
 
-版本：6.24.2
+pnpm@7.9.0
 
 [JavaScript 包管理器简史](https://github.com/zqinmiao/js-coding-rover/docs/yarn/javascript-package-manager-history/index.md)
 

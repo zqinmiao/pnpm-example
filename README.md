@@ -6,6 +6,8 @@ pnpm@7.9.0
 
 [关于幻影依赖（Phantom dependencies）问题的探索](./docs/phantom-dependencies.md)
 
+[Changesets 工作流探索](./docs/explore-changeset.md)
+
 ## 安装初尝试
 
 当我在一个没有`package.json`的项目下执行`pnpm install lodash`，CLI 提示安装的包在系统中的位置及目录

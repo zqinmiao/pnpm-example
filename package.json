@@ -2,5 +2,9 @@
   "dependencies": {
     "node-emoji": "^1.11.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@changesets/changelog-git": "^0.1.12",
+    "@changesets/changelog-github": "^0.4.6",
+    "@changesets/cli": "^2.24.4"
+  }
 }

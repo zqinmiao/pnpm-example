@@ -22,6 +22,15 @@ importers:
   packages/package-b:
     specifiers: {}
 
+  packages/pnpm-example-1:
+    specifiers: {}
+
+  packages/pnpm-example-2:
+    specifiers:
+      '@buibis/pnpm-example-1': workspace:*
+    dependencies:
+      '@buibis/pnpm-example-1': link:../pnpm-example-1
+
 packages:
 
   /@eslint/eslintrc/1.0.5:

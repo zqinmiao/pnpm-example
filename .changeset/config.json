@@ -1,10 +1,7 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@2.1.1/schema.json",
-  "changelog": [
-    "@changesets/changelog-github",
-    { "repo": "zqinmiao/pnpm-example" }
-  ],
-  "commit": false,
+  "changelog": "@changesets/cli/changelog",
+  "commit": true,
   "fixed": [],
   "linked": [],
   "access": "restricted",

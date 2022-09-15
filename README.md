@@ -94,3 +94,66 @@ packages:
   # 不包括在 test 文件夹下的 package
   - "!**/test/**"
 ```
+
+### 新增/删除依赖
+
+可以分为三种情况：
+
+> 应该尽量把子包的 devDependencies 作为根目录的 devDependencies，从而安装在根目录。
+> 如果版本遇到冲突，可以安装在子包内。
+
+#### 1. 根目录
+
+```bash
+# 新增
+$ pnpm add -wD <dependency>
+
+# 删除
+$ pnpm remove -wD <dependency>
+```
+
+#### 2. 操作某个子包
+
+```bash
+# 为某个子包（如 @buibis/pnpm-example-2）新增一个依赖
+$ pnpm --filter @buibis/pnpm-example-2 add <dependency>
+
+# 为某个子包（如 @buibis/pnpm-example-2）删除一个依赖
+$ pnpm --filter @buibis/pnpm-example-2 remove <dependency>
+```
+
+#### 3. 操作所有子包
+
+```bash
+# 新增
+$ pnpm -r --filter=./packages/* add <dependency>
+
+# 删除
+$ pnpm -r --filter=./packages/* remove <dependency>
+```
+
+## FAQ
+
+### `Error: Your application tried to access @buibis/pnpm-example-1, but it isn't declared in your dependencies; this makes the require call ambiguous and unsound.`
+
+执行`pnpm --filter @buibis/pnpm-example-2 start`报如题的错误：
+
+```bash
+> @buibis/pnpm-example-2@1.0.0 start /Users/reahink/develop/github-projects/pnpm-example/packages/pnpm-example-2
+> node ./index.js
+
+/Users/reahink/develop/github-projects/pnpm-example/.pnp.cjs:6157
+    throw firstError;
+    ^
+
+Error: Your application tried to access @buibis/pnpm-example-1, but it isn't declared in your dependencies; this makes the require call ambiguous and unsound.
+
+Required package: @buibis/pnpm-example-1 (via "@buibis/pnpm-example-1")
+Required by: /Users/reahink/develop/github-projects/pnpm-example/packages/pnpm-example-2/
+
+Require stack:
+```
+
+#### 原因
+
+这是因为存在`.pnp.cjs`导致的，删除即可

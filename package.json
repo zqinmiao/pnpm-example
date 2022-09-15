@@ -2,5 +2,7 @@
   "dependencies": {
     "node-emoji": "^1.11.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "turbo": "^1.4.6"
+  }
 }

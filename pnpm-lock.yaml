@@ -22,6 +22,15 @@ importers:
   packages/package-b:
     specifiers: {}
 
+  packages/pnpm-lerna-1:
+    specifiers: {}
+
+  packages/pnpm-lerna-2:
+    specifiers:
+      '@buibis/pnpm-lerna-1': workspace:*
+    dependencies:
+      '@buibis/pnpm-lerna-1': link:../pnpm-lerna-1
+
 packages:
 
   /@eslint/eslintrc/1.0.5:

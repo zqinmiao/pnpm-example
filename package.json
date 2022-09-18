@@ -2,5 +2,11 @@
   "dependencies": {
     "node-emoji": "^1.11.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "lerna": "^5.5.1"
+  },
+  "name": "pnpm-example",
+  "workspaces": [
+    "packages/*"
+  ]
 }

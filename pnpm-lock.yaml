@@ -4,11 +4,13 @@ importers:
 
   .:
     specifiers:
+      conventional-changelog-conventionalcommits: ^5.0.0
       lerna: ^5.5.1
       node-emoji: ^1.11.0
     dependencies:
       node-emoji: 1.11.0
     devDependencies:
+      conventional-changelog-conventionalcommits: 5.0.0
       lerna: 5.5.1
 
   packages/package-a:
@@ -1624,6 +1626,15 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       compare-func: 2.0.0
+      q: 1.5.1
+    dev: true
+
+  /conventional-changelog-conventionalcommits/5.0.0:
+    resolution: {integrity: sha512-lCDbA+ZqVFQGUj7h9QBKoIpLhl8iihkO0nCTyRNzuXtcd7ubODpYB04IFy31JloiJgG0Uovu8ot8oxRzn7Nwtw==}
+    engines: {node: '>=10'}
+    dependencies:
+      compare-func: 2.0.0
+      lodash: 4.17.21
       q: 1.5.1
     dev: true
 

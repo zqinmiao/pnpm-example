@@ -1,6 +1,6 @@
 {
   "name": "@buibis/pnpm-lerna-2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,5 @@
   "dependencies": {
     "@buibis/pnpm-lerna-1": "workspace:*"
   },
-  "devDependencies": {},
   "license": "ISC"
 }

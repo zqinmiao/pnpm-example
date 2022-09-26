@@ -4,7 +4,7 @@
   },
   "devDependencies": {
     "conventional-changelog-conventionalcommits": "^5.0.0",
-    "lerna": "^5.5.1"
+    "lerna": "^5.5.2"
   },
   "name": "pnpm-example",
   "workspaces": [

@@ -32,7 +32,7 @@ importers:
 
   packages/pnpm-lerna-2:
     specifiers:
-      '@buibis/pnpm-lerna-1': workspace:*
+      '@buibis/pnpm-lerna-1': ^1.1.1
     dependencies:
       '@buibis/pnpm-lerna-1': link:../pnpm-lerna-1
 

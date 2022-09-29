@@ -13,7 +13,7 @@
   "keywords": [],
   "author": "",
   "dependencies": {
-    "@buibis/pnpm-lerna-1": "workspace:*"
+    "@buibis/pnpm-lerna-1": "^1.1.0"
   },
   "license": "ISC"
 }

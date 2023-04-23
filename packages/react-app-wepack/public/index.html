@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>webpack5-react-ts-app</title>
+    <!-- 引入 React 17版本 -->
+    <script src="https://unpkg.com/react@17.0.2/umd/react.development.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js" crossorigin="anonymous"></script>
+    <script>
+      window.React17 = window.React;
+      window.ReactDOM17 = window.ReactDOM;
+    </script>
+    <!-- 引入 React 18版本 -->
+    <script src="<%= htmlWebpackPlugin.options.reactPath %>" crossorigin="anonymous"></script>
+    <script src="<%= htmlWebpackPlugin.options.reactDOMPath %>" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- 来自packages/webpack/v5/examples/react-component-lib -->
+    <script src="http://localhost:8082/bundle.js"></script>
+  </body>
+</html>

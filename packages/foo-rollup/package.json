@@ -1,0 +1,27 @@
+{
+  "name": "foo-rollup",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "browser": "dist/index.umd.js",
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "dependencies": {
+    "rollup_v3__lib-intellisense": "^0.0.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.1.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "rollup": "^3.20.7"
+  },
+  "license": "ISC"
+}
